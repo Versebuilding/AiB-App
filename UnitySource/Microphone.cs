@@ -52,6 +52,17 @@ namespace UnityEngine
 
 		public static AudioClip Start(string deviceName, bool loop, int lengthSec, int frequency)
 		{
+			if (deviceName == null)
+			{
+				var _devices = devices; // Prevent double call
+				if (_devices.Length != 0)
+					deviceName = _devices[0];
+				else
+				{
+					Debug.Error("There are no input audio devices availble for Microphone.Start()");
+					return null;
+				}
+			}
 			//a_device = GetDeviceIndex(deviceName);
 			//WebGL_Start(a_device, frequency, 1);
 

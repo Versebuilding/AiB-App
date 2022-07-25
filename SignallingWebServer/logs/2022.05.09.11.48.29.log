@@ -1,0 +1,43 @@
+11:48:29.376 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "/Public/AiB.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 8079,
+	"HttpsPort": 8078,
+	"StreamerPort": 8081,
+	"SFUPort": 8889,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\"]}] }",
+	"publicIp": "174.73.238.87"
+}
+11:48:29.406 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302"]}]}
+11:48:29.409 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.0.
+11:48:29.420 WebSocket listening for Streamer connections on :8081
+11:48:29.421 WebSocket listening for SFU connections on :8889
+11:48:29.421 WebSocket listening for Players connections on :8079
+11:48:29.422 Http listening on *: 8079
+11:48:49.916 Streamer connected: ::1
+11:49:51.174 [37m-> Streamer[34m: {"type":"ping","time":1654800591}
+11:49:51.175 [37m<- Streamer[32m: {"type":"pong","time":1654800591}
+11:50:51.191 [37m-> Streamer[34m: {"type":"ping","time":1654800651}
+11:50:51.192 [37m<- Streamer[32m: {"type":"pong","time":1654800651}
+11:51:51.185 [37m-> Streamer[34m: {"type":"ping","time":1654800711}
+11:51:51.186 [37m<- Streamer[32m: {"type":"pong","time":1654800711}
+11:52:51.187 [37m-> Streamer[34m: {"type":"ping","time":1654800771}
+11:52:51.188 [37m<- Streamer[32m: {"type":"pong","time":1654800771}
+11:53:51.196 [37m-> Streamer[34m: {"type":"ping","time":1654800831}
+11:53:51.197 [37m<- Streamer[32m: {"type":"pong","time":1654800831}
+11:54:51.185 [37m-> Streamer[34m: {"type":"ping","time":1654800891}
+11:54:51.186 [37m<- Streamer[32m: {"type":"pong","time":1654800891}
+11:55:51.228 [37m-> Streamer[34m: {"type":"ping","time":1654800951}
+11:55:51.230 [37m<- Streamer[32m: {"type":"pong","time":1654800951}
+11:56:51.163 [37m-> Streamer[34m: {"type":"ping","time":1654801011}
+11:56:51.165 [37m<- Streamer[32m: {"type":"pong","time":1654801011}

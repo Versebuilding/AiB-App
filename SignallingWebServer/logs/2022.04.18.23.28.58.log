@@ -1,0 +1,49 @@
+23:28:58.025 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "/Public/AiB.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 8079,
+	"HttpsPort": 8078,
+	"StreamerPort": 8081,
+	"SFUPort": 8082,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\"]}] }",
+	"publicIp": "174.73.238.87"
+}
+23:28:58.049 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302"]}]}
+23:28:58.052 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.0.
+23:28:58.062 WebSocket listening for Streamer connections on :8081
+23:28:58.063 WebSocket listening for SFU connections on :8082
+23:28:58.063 WebSocket listening for Players connections on :8079
+23:28:58.064 Http listening on *: 8079
+23:28:58.569 Streamer connected: ::1
+23:29:16.030 player 101 (::ffff:127.0.0.1) connected
+23:29:16.031 [37m<- Streamer[32m: {"type":"playerConnected","playerId":"101","dataChannel":true,"sfu":false}
+23:29:16.033 player 101 connection closed: 1006 - 
+23:29:16.034 [37m<- Streamer[32m: {"type":"playerDisconnected","playerId":"101"}
+23:29:44.819 player 102 (::ffff:127.0.0.1) connected
+23:29:44.820 [37m<- Streamer[32m: {"type":"playerConnected","playerId":"102","dataChannel":true,"sfu":false}
+23:29:44.822 player 102 connection closed: 1006 - 
+23:29:44.822 [37m<- Streamer[32m: {"type":"playerDisconnected","playerId":"102"}
+23:29:58.628 [37m-> Streamer[34m: {"type":"ping","time":1652941798}
+23:29:58.629 [37m<- Streamer[32m: {"type":"pong","time":1652941798}
+23:30:19.864 player 103 (::ffff:127.0.0.1) connected
+23:30:19.865 [37m<- Streamer[32m: {"type":"playerConnected","playerId":"103","dataChannel":true,"sfu":false}
+23:30:19.868 player 103 connection closed: 1006 - 
+23:30:19.868 [37m<- Streamer[32m: {"type":"playerDisconnected","playerId":"103"}
+23:30:19.903 [37m-> Streamer[34m: {"type":"offer","playerId":103,"sdp":"v=0\r\no=- 5491107275594953839 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:p6Xd\r\na=ice-pwd:kj1YP6deAJsa8p3GywtTjUMF\r\na=ice-options:trickle\r\na=fingerprint:sha-256 6D:9F:7C:25:5B:8D:67:0E:6C:B0:86:3F:47:A8:64:ED:14:82:77:5B:07:E3:66:68:4F:E4:85:09:B1:A2:49:74\r\na=setup:actpass\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\na=ssrc-group:FID 1580017791 542859063\r\na=ssrc:1580017791 cname:UEFUFKRs2KJOyjov\r\na=ssrc:1580017791 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:1580017791 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:1580017791 label:pixelstreaming_video_track_label\r\na=ssrc:542859063 cname:UEFUFKRs2KJOyjov\r\na=ssrc:542859063 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:542859063 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:542859063 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:p6Xd\r\na=ice-pwd:kj1YP6deAJsa8p3GywtTjUMF\r\na=ice-options:trickle\r\na=fingerprint:sha-256 6D:9F:7C:25:5B:8D:67:0E:6C:B0:86:3F:47:A8:64:ED:14:82:77:5B:07:E3:66:68:4F:E4:85:09:B1:A2:49:74\r\na=setup:actpass\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:747553103 cname:UEFUFKRs2KJOyjov\r\na=ssrc:747553103 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:747553103 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:747553103 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:p6Xd\r\na=ice-pwd:kj1YP6deAJsa8p3GywtTjUMF\r\na=ice-options:trickle\r\na=fingerprint:sha-256 6D:9F:7C:25:5B:8D:67:0E:6C:B0:86:3F:47:A8:64:ED:14:82:77:5B:07:E3:66:68:4F:E4:85:09:B1:A2:49:74\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+23:30:19.906 dropped message offer as the player 103 is not found
+23:30:19.936 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 62009 typ host generation 0 ufrag p6Xd network-id 1"}}
+23:30:19.936 dropped message iceCandidate as the player 103 is not found
+23:30:19.970 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 62010 typ host generation 0 ufrag p6Xd network-id 1"}}
+23:30:19.971 dropped message iceCandidate as the player 103 is not found
+23:30:20.004 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 62011 typ host generation 0 ufrag p6Xd network-id 1"}}
+23:30:20.005 dropped message iceCandidate as the player 103 is not found

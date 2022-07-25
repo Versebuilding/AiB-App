@@ -1,0 +1,738 @@
+12:30:56.042 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "/Public/AiB.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 8079,
+	"HttpsPort": 8078,
+	"StreamerPort": 8081,
+	"SFUPort": 8889,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\"]}] }",
+	"publicIp": "174.73.238.87"
+}
+12:30:56.075 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302"]}]}
+12:30:56.079 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.0.
+12:30:56.090 WebSocket listening for Streamer connections on :8081
+12:30:56.091 WebSocket listening for SFU connections on :8889
+12:30:56.091 WebSocket listening for Players connections on :8079
+12:30:56.093 Http listening on *: 8079
+15:57:52.971 Streamer connected: ::1
+15:58:54.243 [37m-> Streamer[34m: {"type":"ping","time":1654383534}
+15:58:54.245 [37m<- Streamer[32m: {"type":"pong","time":1654383534}
+15:59:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654383594}
+15:59:54.207 [37m<- Streamer[32m: {"type":"pong","time":1654383594}
+16:00:54.199 [37m-> Streamer[34m: {"type":"ping","time":1654383654}
+16:00:54.200 [37m<- Streamer[32m: {"type":"pong","time":1654383654}
+16:01:26.508 player 101 (::1) connected
+16:01:26.509 [37m<- Streamer[32m: {"type":"playerConnected","playerId":"101","dataChannel":true,"sfu":false}
+16:01:26.578 [37m-> Streamer[34m: {"type":"offer","playerId":101,"sdp":"v=0\r\no=- 4175569274187912501 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:WZFT\r\na=ice-pwd:ol7JmaaI18EFHXkKpk4aouU7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 58:19:F4:1E:93:86:C2:63:F7:53:96:E3:09:16:A7:4A:99:37:B9:53:CD:C2:D3:20:A7:98:2F:F4:0E:05:F9:A7\r\na=setup:actpass\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\na=ssrc-group:FID 1315876099 2790608133\r\na=ssrc:1315876099 cname:pP5coebxGiAREobj\r\na=ssrc:1315876099 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:1315876099 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:1315876099 label:pixelstreaming_video_track_label\r\na=ssrc:2790608133 cname:pP5coebxGiAREobj\r\na=ssrc:2790608133 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:2790608133 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:2790608133 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:WZFT\r\na=ice-pwd:ol7JmaaI18EFHXkKpk4aouU7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 58:19:F4:1E:93:86:C2:63:F7:53:96:E3:09:16:A7:4A:99:37:B9:53:CD:C2:D3:20:A7:98:2F:F4:0E:05:F9:A7\r\na=setup:actpass\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:1945522257 cname:pP5coebxGiAREobj\r\na=ssrc:1945522257 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:1945522257 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:1945522257 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:WZFT\r\na=ice-pwd:ol7JmaaI18EFHXkKpk4aouU7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 58:19:F4:1E:93:86:C2:63:F7:53:96:E3:09:16:A7:4A:99:37:B9:53:CD:C2:D3:20:A7:98:2F:F4:0E:05:F9:A7\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+16:01:26.582 [37m<- player 101[32m: {"type":"offer","sdp":"v=0\r\no=- 4175569274187912501 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:WZFT\r\na=ice-pwd:ol7JmaaI18EFHXkKpk4aouU7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 58:19:F4:1E:93:86:C2:63:F7:53:96:E3:09:16:A7:4A:99:37:B9:53:CD:C2:D3:20:A7:98:2F:F4:0E:05:F9:A7\r\na=setup:actpass\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\na=ssrc-group:FID 1315876099 2790608133\r\na=ssrc:1315876099 cname:pP5coebxGiAREobj\r\na=ssrc:1315876099 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:1315876099 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:1315876099 label:pixelstreaming_video_track_label\r\na=ssrc:2790608133 cname:pP5coebxGiAREobj\r\na=ssrc:2790608133 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:2790608133 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:2790608133 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:WZFT\r\na=ice-pwd:ol7JmaaI18EFHXkKpk4aouU7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 58:19:F4:1E:93:86:C2:63:F7:53:96:E3:09:16:A7:4A:99:37:B9:53:CD:C2:D3:20:A7:98:2F:F4:0E:05:F9:A7\r\na=setup:actpass\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:1945522257 cname:pP5coebxGiAREobj\r\na=ssrc:1945522257 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:1945522257 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:1945522257 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:WZFT\r\na=ice-pwd:ol7JmaaI18EFHXkKpk4aouU7\r\na=ice-options:trickle\r\na=fingerprint:sha-256 58:19:F4:1E:93:86:C2:63:F7:53:96:E3:09:16:A7:4A:99:37:B9:53:CD:C2:D3:20:A7:98:2F:F4:0E:05:F9:A7\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+16:01:26.611 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 55585 typ host generation 0 ufrag WZFT network-id 1"}}
+16:01:26.611 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 55585 typ host generation 0 ufrag WZFT network-id 1"}}
+16:01:26.645 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 55586 typ host generation 0 ufrag WZFT network-id 1"}}
+16:01:26.646 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 55586 typ host generation 0 ufrag WZFT network-id 1"}}
+16:01:26.679 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 55587 typ host generation 0 ufrag WZFT network-id 1"}}
+16:01:26.679 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 55587 typ host generation 0 ufrag WZFT network-id 1"}}
+16:01:26.713 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 55586 typ srflx raddr 192.168.163.150 rport 55586 generation 0 ufrag WZFT network-id 1"}}
+16:01:26.714 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 55586 typ srflx raddr 192.168.163.150 rport 55586 generation 0 ufrag WZFT network-id 1"}}
+16:01:26.746 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 55585 typ srflx raddr 192.168.163.150 rport 55585 generation 0 ufrag WZFT network-id 1"}}
+16:01:26.747 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 55585 typ srflx raddr 192.168.163.150 rport 55585 generation 0 ufrag WZFT network-id 1"}}
+16:01:26.780 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 55587 typ srflx raddr 192.168.163.150 rport 55587 generation 0 ufrag WZFT network-id 1"}}
+16:01:26.781 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 55587 typ srflx raddr 192.168.163.150 rport 55587 generation 0 ufrag WZFT network-id 1"}}
+16:01:26.814 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 50445 typ host tcptype passive generation 0 ufrag WZFT network-id 1"}}
+16:01:26.815 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 50445 typ host tcptype passive generation 0 ufrag WZFT network-id 1"}}
+16:01:26.836 [37m-> player 101[34m: {"type":"answer","sdp":"v=0\r\no=- 3962259673213929699 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:amiT\r\na=ice-pwd:YdV302UzMbhW4WDi3+uUvqAO\r\na=ice-options:trickle\r\na=fingerprint:sha-256 FC:BF:E8:E4:F1:24:8C:6A:A4:CB:85:EF:8C:85:3F:4D:71:C9:20:10:47:D9:D5:EF:FB:4F:21:72:21:37:31:D0\r\na=setup:active\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:amiT\r\na=ice-pwd:YdV302UzMbhW4WDi3+uUvqAO\r\na=ice-options:trickle\r\na=fingerprint:sha-256 FC:BF:E8:E4:F1:24:8C:6A:A4:CB:85:EF:8C:85:3F:4D:71:C9:20:10:47:D9:D5:EF:FB:4F:21:72:21:37:31:D0\r\na=setup:active\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:amiT\r\na=ice-pwd:YdV302UzMbhW4WDi3+uUvqAO\r\na=ice-options:trickle\r\na=fingerprint:sha-256 FC:BF:E8:E4:F1:24:8C:6A:A4:CB:85:EF:8C:85:3F:4D:71:C9:20:10:47:D9:D5:EF:FB:4F:21:72:21:37:31:D0\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+16:01:26.839 [37m<- Streamer[32m: {"type":"answer","sdp":"v=0\r\no=- 3962259673213929699 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:amiT\r\na=ice-pwd:YdV302UzMbhW4WDi3+uUvqAO\r\na=ice-options:trickle\r\na=fingerprint:sha-256 FC:BF:E8:E4:F1:24:8C:6A:A4:CB:85:EF:8C:85:3F:4D:71:C9:20:10:47:D9:D5:EF:FB:4F:21:72:21:37:31:D0\r\na=setup:active\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:amiT\r\na=ice-pwd:YdV302UzMbhW4WDi3+uUvqAO\r\na=ice-options:trickle\r\na=fingerprint:sha-256 FC:BF:E8:E4:F1:24:8C:6A:A4:CB:85:EF:8C:85:3F:4D:71:C9:20:10:47:D9:D5:EF:FB:4F:21:72:21:37:31:D0\r\na=setup:active\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:amiT\r\na=ice-pwd:YdV302UzMbhW4WDi3+uUvqAO\r\na=ice-options:trickle\r\na=fingerprint:sha-256 FC:BF:E8:E4:F1:24:8C:6A:A4:CB:85:EF:8C:85:3F:4D:71:C9:20:10:47:D9:D5:EF:FB:4F:21:72:21:37:31:D0\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n","playerId":"101"}
+16:01:26.848 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 50446 typ host tcptype passive generation 0 ufrag WZFT network-id 1"}}
+16:01:26.848 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 50446 typ host tcptype passive generation 0 ufrag WZFT network-id 1"}}
+16:01:26.882 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":101,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 50447 typ host tcptype passive generation 0 ufrag WZFT network-id 1"}}
+16:01:26.883 [37m<- player 101[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 50447 typ host tcptype passive generation 0 ufrag WZFT network-id 1"}}
+16:01:26.907 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2475390156 1 udp 2122260223 172.27.208.1 59323 typ host generation 0 ufrag amiT network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+16:01:26.907 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2475390156 1 udp 2122260223 172.27.208.1 59323 typ host generation 0 ufrag amiT network-id 1","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:26.909 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1783492496 1 udp 2122197247 2600:8800:8016:dd00:9043:af25:a042:393b 59324 typ host generation 0 ufrag amiT network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:26.910 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1783492496 1 udp 2122197247 2600:8800:8016:dd00:9043:af25:a042:393b 59324 typ host generation 0 ufrag amiT network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:26.912 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3195714429 1 udp 2122131711 2600:8800:8016:dd00:197d:4bd:33c7:2942 59325 typ host generation 0 ufrag amiT network-id 4 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:26.912 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3195714429 1 udp 2122131711 2600:8800:8016:dd00:197d:4bd:33c7:2942 59325 typ host generation 0 ufrag amiT network-id 4 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:26.917 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3816187009 1 udp 2122066175 2600:8800:8016:dd00::4fdd 59326 typ host generation 0 ufrag amiT network-id 5 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:26.918 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3816187009 1 udp 2122066175 2600:8800:8016:dd00::4fdd 59326 typ host generation 0 ufrag amiT network-id 5 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:26.919 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1170332293 1 udp 2121998079 192.168.0.195 59327 typ host generation 0 ufrag amiT network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:26.919 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:1170332293 1 udp 2121998079 192.168.0.195 59327 typ host generation 0 ufrag amiT network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:27.033 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3297369137 1 udp 1685790463 98.177.111.207 59327 typ srflx raddr 192.168.0.195 rport 59327 generation 0 ufrag amiT network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:27.034 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3297369137 1 udp 1685790463 98.177.111.207 59327 typ srflx raddr 192.168.0.195 rport 59327 generation 0 ufrag amiT network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:27.034 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3708323900 1 tcp 1518280447 172.27.208.1 9 typ host tcptype active generation 0 ufrag amiT network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+16:01:27.035 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:3708323900 1 tcp 1518280447 172.27.208.1 9 typ host tcptype active generation 0 ufrag amiT network-id 1","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:27.035 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:617485152 1 tcp 1518217471 2600:8800:8016:dd00:9043:af25:a042:393b 9 typ host tcptype active generation 0 ufrag amiT network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:27.035 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:617485152 1 tcp 1518217471 2600:8800:8016:dd00:9043:af25:a042:393b 9 typ host tcptype active generation 0 ufrag amiT network-id 3 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:27.036 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:4042868621 1 tcp 1518151935 2600:8800:8016:dd00:197d:4bd:33c7:2942 9 typ host tcptype active generation 0 ufrag amiT network-id 4 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:27.036 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:4042868621 1 tcp 1518151935 2600:8800:8016:dd00:197d:4bd:33c7:2942 9 typ host tcptype active generation 0 ufrag amiT network-id 4 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:27.038 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2918553713 1 tcp 1518086399 2600:8800:8016:dd00::4fdd 9 typ host tcptype active generation 0 ufrag amiT network-id 5 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:27.039 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2918553713 1 tcp 1518086399 2600:8800:8016:dd00::4fdd 9 typ host tcptype active generation 0 ufrag amiT network-id 5 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:27.041 [37m-> player 101[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:188884597 1 tcp 1518018303 192.168.0.195 9 typ host tcptype active generation 0 ufrag amiT network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+16:01:27.041 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:188884597 1 tcp 1518018303 192.168.0.195 9 typ host tcptype active generation 0 ufrag amiT network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"101"}
+16:01:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654383714}
+16:01:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654383714}
+16:02:26.816 player 101 connection closed: 1006 - 
+16:02:26.817 [37m<- Streamer[32m: {"type":"playerDisconnected","playerId":"101"}
+16:02:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654383774}
+16:02:54.208 [37m<- Streamer[32m: {"type":"pong","time":1654383774}
+16:03:54.225 [37m-> Streamer[34m: {"type":"ping","time":1654383834}
+16:03:54.226 [37m<- Streamer[32m: {"type":"pong","time":1654383834}
+16:04:54.242 [37m-> Streamer[34m: {"type":"ping","time":1654383894}
+16:04:54.244 [37m<- Streamer[32m: {"type":"pong","time":1654383894}
+16:05:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654383954}
+16:05:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654383954}
+16:06:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654384014}
+16:06:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654384014}
+16:07:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654384074}
+16:07:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654384074}
+16:08:54.204 [37m-> Streamer[34m: {"type":"ping","time":1654384134}
+16:08:54.205 [37m<- Streamer[32m: {"type":"pong","time":1654384134}
+16:09:54.243 [37m-> Streamer[34m: {"type":"ping","time":1654384194}
+16:09:54.244 [37m<- Streamer[32m: {"type":"pong","time":1654384194}
+16:10:54.205 [37m-> Streamer[34m: {"type":"ping","time":1654384254}
+16:10:54.206 [37m<- Streamer[32m: {"type":"pong","time":1654384254}
+16:11:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654384314}
+16:11:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654384314}
+16:12:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654384374}
+16:12:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654384374}
+16:13:54.223 [37m-> Streamer[34m: {"type":"ping","time":1654384434}
+16:13:54.224 [37m<- Streamer[32m: {"type":"pong","time":1654384434}
+16:14:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654384494}
+16:14:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654384494}
+16:15:54.244 [37m-> Streamer[34m: {"type":"ping","time":1654384554}
+16:15:54.245 [37m<- Streamer[32m: {"type":"pong","time":1654384554}
+16:16:54.228 [37m-> Streamer[34m: {"type":"ping","time":1654384614}
+16:16:54.229 [37m<- Streamer[32m: {"type":"pong","time":1654384614}
+16:17:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654384674}
+16:17:54.231 [37m<- Streamer[32m: {"type":"pong","time":1654384674}
+16:18:54.216 [37m-> Streamer[34m: {"type":"ping","time":1654384734}
+16:18:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654384734}
+16:19:54.224 [37m-> Streamer[34m: {"type":"ping","time":1654384794}
+16:19:54.225 [37m<- Streamer[32m: {"type":"pong","time":1654384794}
+16:20:54.223 [37m-> Streamer[34m: {"type":"ping","time":1654384854}
+16:20:54.224 [37m<- Streamer[32m: {"type":"pong","time":1654384854}
+16:21:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654384914}
+16:21:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654384914}
+16:22:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654384974}
+16:22:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654384974}
+16:23:54.204 [37m-> Streamer[34m: {"type":"ping","time":1654385034}
+16:23:54.205 [37m<- Streamer[32m: {"type":"pong","time":1654385034}
+16:24:54.245 [37m-> Streamer[34m: {"type":"ping","time":1654385094}
+16:24:54.249 [37m<- Streamer[32m: {"type":"pong","time":1654385094}
+16:25:54.218 [37m-> Streamer[34m: {"type":"ping","time":1654385154}
+16:25:54.219 [37m<- Streamer[32m: {"type":"pong","time":1654385154}
+16:26:54.238 [37m-> Streamer[34m: {"type":"ping","time":1654385214}
+16:26:54.239 [37m<- Streamer[32m: {"type":"pong","time":1654385214}
+16:27:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654385274}
+16:27:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654385274}
+16:28:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654385334}
+16:28:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654385334}
+16:29:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654385394}
+16:29:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654385394}
+16:30:54.210 [37m-> Streamer[34m: {"type":"ping","time":1654385454}
+16:30:54.211 [37m<- Streamer[32m: {"type":"pong","time":1654385454}
+16:31:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654385514}
+16:31:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654385514}
+16:32:54.231 [37m-> Streamer[34m: {"type":"ping","time":1654385574}
+16:32:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654385574}
+16:33:54.217 [37m-> Streamer[34m: {"type":"ping","time":1654385634}
+16:33:54.218 [37m<- Streamer[32m: {"type":"pong","time":1654385634}
+16:34:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654385694}
+16:34:54.233 [37m<- Streamer[32m: {"type":"pong","time":1654385694}
+16:35:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654385754}
+16:35:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654385754}
+16:36:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654385814}
+16:36:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654385814}
+16:37:54.197 [37m-> Streamer[34m: {"type":"ping","time":1654385874}
+16:37:54.198 [37m<- Streamer[32m: {"type":"pong","time":1654385874}
+16:38:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654385934}
+16:38:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654385934}
+16:39:54.223 [37m-> Streamer[34m: {"type":"ping","time":1654385994}
+16:39:54.224 [37m<- Streamer[32m: {"type":"pong","time":1654385994}
+16:40:54.210 [37m-> Streamer[34m: {"type":"ping","time":1654386054}
+16:40:54.211 [37m<- Streamer[32m: {"type":"pong","time":1654386054}
+16:41:54.200 [37m-> Streamer[34m: {"type":"ping","time":1654386114}
+16:41:54.201 [37m<- Streamer[32m: {"type":"pong","time":1654386114}
+16:42:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654386174}
+16:42:54.208 [37m<- Streamer[32m: {"type":"pong","time":1654386174}
+16:43:54.235 [37m-> Streamer[34m: {"type":"ping","time":1654386234}
+16:43:54.236 [37m<- Streamer[32m: {"type":"pong","time":1654386234}
+16:44:54.200 [37m-> Streamer[34m: {"type":"ping","time":1654386294}
+16:44:54.201 [37m<- Streamer[32m: {"type":"pong","time":1654386294}
+16:45:54.236 [37m-> Streamer[34m: {"type":"ping","time":1654386354}
+16:45:54.237 [37m<- Streamer[32m: {"type":"pong","time":1654386354}
+16:46:54.234 [37m-> Streamer[34m: {"type":"ping","time":1654386414}
+16:46:54.235 [37m<- Streamer[32m: {"type":"pong","time":1654386414}
+16:47:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654386474}
+16:47:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654386474}
+16:48:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654386534}
+16:48:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654386534}
+16:49:54.219 [37m-> Streamer[34m: {"type":"ping","time":1654386594}
+16:49:54.220 [37m<- Streamer[32m: {"type":"pong","time":1654386594}
+16:50:54.212 [37m-> Streamer[34m: {"type":"ping","time":1654386654}
+16:50:54.213 [37m<- Streamer[32m: {"type":"pong","time":1654386654}
+16:51:54.234 [37m-> Streamer[34m: {"type":"ping","time":1654386714}
+16:51:54.236 [37m<- Streamer[32m: {"type":"pong","time":1654386714}
+16:52:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654386774}
+16:52:54.229 [37m<- Streamer[32m: {"type":"pong","time":1654386774}
+16:53:54.217 [37m-> Streamer[34m: {"type":"ping","time":1654386834}
+16:53:54.218 [37m<- Streamer[32m: {"type":"pong","time":1654386834}
+16:54:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654386894}
+16:54:54.233 [37m<- Streamer[32m: {"type":"pong","time":1654386894}
+16:55:54.196 [37m-> Streamer[34m: {"type":"ping","time":1654386954}
+16:55:54.197 [37m<- Streamer[32m: {"type":"pong","time":1654386954}
+16:56:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654387014}
+16:56:54.218 [37m<- Streamer[32m: {"type":"pong","time":1654387014}
+16:57:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654387074}
+16:57:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654387074}
+16:58:54.237 [37m-> Streamer[34m: {"type":"ping","time":1654387134}
+16:58:54.238 [37m<- Streamer[32m: {"type":"pong","time":1654387134}
+16:59:54.222 [37m-> Streamer[34m: {"type":"ping","time":1654387194}
+16:59:54.223 [37m<- Streamer[32m: {"type":"pong","time":1654387194}
+17:00:54.204 [37m-> Streamer[34m: {"type":"ping","time":1654387254}
+17:00:54.205 [37m<- Streamer[32m: {"type":"pong","time":1654387254}
+17:01:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654387314}
+17:01:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654387314}
+17:02:54.209 [37m-> Streamer[34m: {"type":"ping","time":1654387374}
+17:02:54.210 [37m<- Streamer[32m: {"type":"pong","time":1654387374}
+17:03:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654387434}
+17:03:54.233 [37m<- Streamer[32m: {"type":"pong","time":1654387434}
+17:04:54.196 [37m-> Streamer[34m: {"type":"ping","time":1654387494}
+17:04:54.196 [37m<- Streamer[32m: {"type":"pong","time":1654387494}
+17:05:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654387554}
+17:05:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654387554}
+17:06:54.217 [37m-> Streamer[34m: {"type":"ping","time":1654387614}
+17:06:54.218 [37m<- Streamer[32m: {"type":"pong","time":1654387614}
+17:07:54.205 [37m-> Streamer[34m: {"type":"ping","time":1654387674}
+17:07:54.206 [37m<- Streamer[32m: {"type":"pong","time":1654387674}
+17:08:54.198 [37m-> Streamer[34m: {"type":"ping","time":1654387734}
+17:08:54.199 [37m<- Streamer[32m: {"type":"pong","time":1654387734}
+17:09:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654387794}
+17:09:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654387794}
+17:10:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654387854}
+17:10:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654387854}
+17:11:54.234 [37m-> Streamer[34m: {"type":"ping","time":1654387914}
+17:11:54.235 [37m<- Streamer[32m: {"type":"pong","time":1654387914}
+17:12:54.198 [37m-> Streamer[34m: {"type":"ping","time":1654387974}
+17:12:54.199 [37m<- Streamer[32m: {"type":"pong","time":1654387974}
+17:13:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654388034}
+17:13:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654388034}
+17:14:54.212 [37m-> Streamer[34m: {"type":"ping","time":1654388094}
+17:14:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654388094}
+17:15:54.238 [37m-> Streamer[34m: {"type":"ping","time":1654388154}
+17:15:54.239 [37m<- Streamer[32m: {"type":"pong","time":1654388154}
+17:16:54.217 [37m-> Streamer[34m: {"type":"ping","time":1654388214}
+17:16:54.218 [37m<- Streamer[32m: {"type":"pong","time":1654388214}
+17:17:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654388274}
+17:17:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654388274}
+17:18:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654388334}
+17:18:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654388334}
+17:19:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654388394}
+17:19:54.233 [37m<- Streamer[32m: {"type":"pong","time":1654388394}
+17:20:54.231 [37m-> Streamer[34m: {"type":"ping","time":1654388454}
+17:20:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654388454}
+17:21:54.198 [37m-> Streamer[34m: {"type":"ping","time":1654388514}
+17:21:54.199 [37m<- Streamer[32m: {"type":"pong","time":1654388514}
+17:22:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654388574}
+17:22:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654388574}
+17:23:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654388634}
+17:23:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654388634}
+17:24:54.209 [37m-> Streamer[34m: {"type":"ping","time":1654388694}
+17:24:54.210 [37m<- Streamer[32m: {"type":"pong","time":1654388694}
+17:25:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654388754}
+17:25:54.208 [37m<- Streamer[32m: {"type":"pong","time":1654388754}
+17:26:54.212 [37m-> Streamer[34m: {"type":"ping","time":1654388814}
+17:26:54.213 [37m<- Streamer[32m: {"type":"pong","time":1654388814}
+17:27:54.210 [37m-> Streamer[34m: {"type":"ping","time":1654388874}
+17:27:54.211 [37m<- Streamer[32m: {"type":"pong","time":1654388874}
+17:28:54.198 [37m-> Streamer[34m: {"type":"ping","time":1654388934}
+17:28:54.199 [37m<- Streamer[32m: {"type":"pong","time":1654388934}
+17:29:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654388994}
+17:29:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654388994}
+17:30:54.230 [37m-> Streamer[34m: {"type":"ping","time":1654389054}
+17:30:54.231 [37m<- Streamer[32m: {"type":"pong","time":1654389054}
+17:31:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654389114}
+17:31:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654389114}
+17:32:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654389174}
+17:32:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654389174}
+17:33:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654389234}
+17:33:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654389234}
+17:34:54.199 [37m-> Streamer[34m: {"type":"ping","time":1654389294}
+17:34:54.200 [37m<- Streamer[32m: {"type":"pong","time":1654389294}
+17:35:54.245 [37m-> Streamer[34m: {"type":"ping","time":1654389354}
+17:35:54.246 [37m<- Streamer[32m: {"type":"pong","time":1654389354}
+17:36:54.219 [37m-> Streamer[34m: {"type":"ping","time":1654389414}
+17:36:54.220 [37m<- Streamer[32m: {"type":"pong","time":1654389414}
+17:37:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654389474}
+17:37:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654389474}
+17:38:54.218 [37m-> Streamer[34m: {"type":"ping","time":1654389534}
+17:38:54.219 [37m<- Streamer[32m: {"type":"pong","time":1654389534}
+17:39:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654389594}
+17:39:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654389594}
+17:40:54.250 [37m-> Streamer[34m: {"type":"ping","time":1654389654}
+17:40:54.251 [37m<- Streamer[32m: {"type":"pong","time":1654389654}
+17:41:54.200 [37m-> Streamer[34m: {"type":"ping","time":1654389714}
+17:41:54.201 [37m<- Streamer[32m: {"type":"pong","time":1654389714}
+17:42:54.244 [37m-> Streamer[34m: {"type":"ping","time":1654389774}
+17:42:54.245 [37m<- Streamer[32m: {"type":"pong","time":1654389774}
+17:43:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654389834}
+17:43:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654389834}
+17:44:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654389894}
+17:44:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654389894}
+17:45:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654389954}
+17:45:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654389954}
+17:46:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654390014}
+17:46:54.213 [37m<- Streamer[32m: {"type":"pong","time":1654390014}
+17:47:54.236 [37m-> Streamer[34m: {"type":"ping","time":1654390074}
+17:47:54.237 [37m<- Streamer[32m: {"type":"pong","time":1654390074}
+17:48:54.231 [37m-> Streamer[34m: {"type":"ping","time":1654390134}
+17:48:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654390134}
+17:49:54.193 [37m-> Streamer[34m: {"type":"ping","time":1654390194}
+17:49:54.194 [37m<- Streamer[32m: {"type":"pong","time":1654390194}
+17:50:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654390254}
+17:50:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654390254}
+17:51:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654390314}
+17:51:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654390314}
+17:52:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654390374}
+17:52:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654390374}
+17:53:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654390434}
+17:53:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654390434}
+17:54:54.224 [37m-> Streamer[34m: {"type":"ping","time":1654390494}
+17:54:54.225 [37m<- Streamer[32m: {"type":"pong","time":1654390494}
+17:55:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654390554}
+17:55:54.229 [37m<- Streamer[32m: {"type":"pong","time":1654390554}
+17:56:54.204 [37m-> Streamer[34m: {"type":"ping","time":1654390614}
+17:56:54.205 [37m<- Streamer[32m: {"type":"pong","time":1654390614}
+17:57:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654390674}
+17:57:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654390674}
+17:58:54.231 [37m-> Streamer[34m: {"type":"ping","time":1654390734}
+17:58:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654390734}
+17:59:54.216 [37m-> Streamer[34m: {"type":"ping","time":1654390794}
+17:59:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654390794}
+18:00:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654390854}
+18:00:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654390854}
+18:01:54.218 [37m-> Streamer[34m: {"type":"ping","time":1654390914}
+18:01:54.219 [37m<- Streamer[32m: {"type":"pong","time":1654390914}
+18:02:54.212 [37m-> Streamer[34m: {"type":"ping","time":1654390974}
+18:02:54.213 [37m<- Streamer[32m: {"type":"pong","time":1654390974}
+18:03:54.200 [37m-> Streamer[34m: {"type":"ping","time":1654391034}
+18:03:54.201 [37m<- Streamer[32m: {"type":"pong","time":1654391034}
+18:04:54.238 [37m-> Streamer[34m: {"type":"ping","time":1654391094}
+18:04:54.239 [37m<- Streamer[32m: {"type":"pong","time":1654391094}
+18:05:54.236 [37m-> Streamer[34m: {"type":"ping","time":1654391154}
+18:05:54.237 [37m<- Streamer[32m: {"type":"pong","time":1654391154}
+18:06:54.225 [37m-> Streamer[34m: {"type":"ping","time":1654391214}
+18:06:54.226 [37m<- Streamer[32m: {"type":"pong","time":1654391214}
+18:07:54.224 [37m-> Streamer[34m: {"type":"ping","time":1654391274}
+18:07:54.224 [37m<- Streamer[32m: {"type":"pong","time":1654391274}
+18:08:54.218 [37m-> Streamer[34m: {"type":"ping","time":1654391334}
+18:08:54.219 [37m<- Streamer[32m: {"type":"pong","time":1654391334}
+18:09:54.210 [37m-> Streamer[34m: {"type":"ping","time":1654391394}
+18:09:54.211 [37m<- Streamer[32m: {"type":"pong","time":1654391394}
+18:10:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654391454}
+18:10:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654391454}
+18:11:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654391514}
+18:11:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654391514}
+18:12:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654391574}
+18:12:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654391574}
+18:13:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654391634}
+18:13:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654391634}
+18:14:54.242 [37m-> Streamer[34m: {"type":"ping","time":1654391694}
+18:14:54.243 [37m<- Streamer[32m: {"type":"pong","time":1654391694}
+18:15:54.217 [37m-> Streamer[34m: {"type":"ping","time":1654391754}
+18:15:54.219 [37m<- Streamer[32m: {"type":"pong","time":1654391754}
+18:16:54.209 [37m-> Streamer[34m: {"type":"ping","time":1654391814}
+18:16:54.210 [37m<- Streamer[32m: {"type":"pong","time":1654391814}
+18:17:54.240 [37m-> Streamer[34m: {"type":"ping","time":1654391874}
+18:17:54.241 [37m<- Streamer[32m: {"type":"pong","time":1654391874}
+18:18:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654391934}
+18:18:54.233 [37m<- Streamer[32m: {"type":"pong","time":1654391934}
+18:19:54.196 [37m-> Streamer[34m: {"type":"ping","time":1654391994}
+18:19:54.197 [37m<- Streamer[32m: {"type":"pong","time":1654391994}
+18:20:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654392054}
+18:20:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654392054}
+18:21:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654392114}
+18:21:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654392114}
+18:22:54.239 [37m-> Streamer[34m: {"type":"ping","time":1654392174}
+18:22:54.240 [37m<- Streamer[32m: {"type":"pong","time":1654392174}
+18:23:54.233 [37m-> Streamer[34m: {"type":"ping","time":1654392234}
+18:23:54.234 [37m<- Streamer[32m: {"type":"pong","time":1654392234}
+18:24:54.224 [37m-> Streamer[34m: {"type":"ping","time":1654392294}
+18:24:54.225 [37m<- Streamer[32m: {"type":"pong","time":1654392294}
+18:25:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654392354}
+18:25:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654392354}
+18:26:54.236 [37m-> Streamer[34m: {"type":"ping","time":1654392414}
+18:26:54.237 [37m<- Streamer[32m: {"type":"pong","time":1654392414}
+18:27:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654392474}
+18:27:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654392474}
+18:28:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654392534}
+18:28:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654392534}
+18:29:54.230 [37m-> Streamer[34m: {"type":"ping","time":1654392594}
+18:29:54.231 [37m<- Streamer[32m: {"type":"pong","time":1654392594}
+18:30:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654392654}
+18:30:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654392654}
+18:31:54.231 [37m-> Streamer[34m: {"type":"ping","time":1654392714}
+18:31:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654392714}
+18:32:54.197 [37m-> Streamer[34m: {"type":"ping","time":1654392774}
+18:32:54.198 [37m<- Streamer[32m: {"type":"pong","time":1654392774}
+18:33:54.241 [37m-> Streamer[34m: {"type":"ping","time":1654392834}
+18:33:54.241 [37m<- Streamer[32m: {"type":"pong","time":1654392834}
+18:34:54.230 [37m-> Streamer[34m: {"type":"ping","time":1654392894}
+18:34:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654392894}
+18:35:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654392954}
+18:35:54.208 [37m<- Streamer[32m: {"type":"pong","time":1654392954}
+18:36:54.242 [37m-> Streamer[34m: {"type":"ping","time":1654393014}
+18:36:54.244 [37m<- Streamer[32m: {"type":"pong","time":1654393014}
+18:37:54.234 [37m-> Streamer[34m: {"type":"ping","time":1654393074}
+18:37:54.235 [37m<- Streamer[32m: {"type":"pong","time":1654393074}
+18:38:54.209 [37m-> Streamer[34m: {"type":"ping","time":1654393134}
+18:38:54.210 [37m<- Streamer[32m: {"type":"pong","time":1654393134}
+18:39:54.225 [37m-> Streamer[34m: {"type":"ping","time":1654393194}
+18:39:54.226 [37m<- Streamer[32m: {"type":"pong","time":1654393194}
+18:40:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654393254}
+18:40:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654393254}
+18:41:54.236 [37m-> Streamer[34m: {"type":"ping","time":1654393314}
+18:41:54.237 [37m<- Streamer[32m: {"type":"pong","time":1654393314}
+18:42:54.223 [37m-> Streamer[34m: {"type":"ping","time":1654393374}
+18:42:54.223 [37m<- Streamer[32m: {"type":"pong","time":1654393374}
+18:43:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654393434}
+18:43:54.208 [37m<- Streamer[32m: {"type":"pong","time":1654393434}
+18:44:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654393494}
+18:44:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654393494}
+18:45:54.216 [37m-> Streamer[34m: {"type":"ping","time":1654393554}
+18:45:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654393554}
+18:46:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654393614}
+18:46:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654393614}
+18:47:54.212 [37m-> Streamer[34m: {"type":"ping","time":1654393674}
+18:47:54.213 [37m<- Streamer[32m: {"type":"pong","time":1654393674}
+18:48:54.224 [37m-> Streamer[34m: {"type":"ping","time":1654393734}
+18:48:54.225 [37m<- Streamer[32m: {"type":"pong","time":1654393734}
+18:49:54.209 [37m-> Streamer[34m: {"type":"ping","time":1654393794}
+18:49:54.211 [37m<- Streamer[32m: {"type":"pong","time":1654393794}
+18:50:54.223 [37m-> Streamer[34m: {"type":"ping","time":1654393854}
+18:50:54.224 [37m<- Streamer[32m: {"type":"pong","time":1654393854}
+18:51:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654393914}
+18:51:54.233 [37m<- Streamer[32m: {"type":"pong","time":1654393914}
+18:52:54.196 [37m-> Streamer[34m: {"type":"ping","time":1654393974}
+18:52:54.197 [37m<- Streamer[32m: {"type":"pong","time":1654393974}
+18:53:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654394034}
+18:53:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654394034}
+18:54:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654394094}
+18:54:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654394094}
+18:55:54.206 [37m-> Streamer[34m: {"type":"ping","time":1654394154}
+18:55:54.208 [37m<- Streamer[32m: {"type":"pong","time":1654394154}
+18:56:54.199 [37m-> Streamer[34m: {"type":"ping","time":1654394214}
+18:56:54.200 [37m<- Streamer[32m: {"type":"pong","time":1654394214}
+18:57:54.230 [37m-> Streamer[34m: {"type":"ping","time":1654394274}
+18:57:54.231 [37m<- Streamer[32m: {"type":"pong","time":1654394274}
+18:58:54.216 [37m-> Streamer[34m: {"type":"ping","time":1654394334}
+18:58:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654394334}
+18:59:54.236 [37m-> Streamer[34m: {"type":"ping","time":1654394394}
+18:59:54.237 [37m<- Streamer[32m: {"type":"pong","time":1654394394}
+19:00:54.212 [37m-> Streamer[34m: {"type":"ping","time":1654394454}
+19:00:54.213 [37m<- Streamer[32m: {"type":"pong","time":1654394454}
+19:01:54.205 [37m-> Streamer[34m: {"type":"ping","time":1654394514}
+19:01:54.206 [37m<- Streamer[32m: {"type":"pong","time":1654394514}
+19:02:54.233 [37m-> Streamer[34m: {"type":"ping","time":1654394574}
+19:02:54.234 [37m<- Streamer[32m: {"type":"pong","time":1654394574}
+19:03:54.205 [37m-> Streamer[34m: {"type":"ping","time":1654394634}
+19:03:54.206 [37m<- Streamer[32m: {"type":"pong","time":1654394634}
+19:04:54.209 [37m-> Streamer[34m: {"type":"ping","time":1654394694}
+19:04:54.210 [37m<- Streamer[32m: {"type":"pong","time":1654394694}
+19:05:54.242 [37m-> Streamer[34m: {"type":"ping","time":1654394754}
+19:05:54.243 [37m<- Streamer[32m: {"type":"pong","time":1654394754}
+19:06:54.231 [37m-> Streamer[34m: {"type":"ping","time":1654394814}
+19:06:54.231 [37m<- Streamer[32m: {"type":"pong","time":1654394814}
+19:07:54.231 [37m-> Streamer[34m: {"type":"ping","time":1654394874}
+19:07:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654394874}
+19:08:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654394934}
+19:08:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654394934}
+19:09:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654394994}
+19:09:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654394994}
+19:10:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654395054}
+19:10:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654395054}
+19:11:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654395114}
+19:11:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654395114}
+19:12:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654395174}
+19:12:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654395174}
+19:13:54.233 [37m-> Streamer[34m: {"type":"ping","time":1654395234}
+19:13:54.234 [37m<- Streamer[32m: {"type":"pong","time":1654395234}
+19:14:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654395294}
+19:14:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654395294}
+19:15:54.233 [37m-> Streamer[34m: {"type":"ping","time":1654395354}
+19:15:54.234 [37m<- Streamer[32m: {"type":"pong","time":1654395354}
+19:16:54.217 [37m-> Streamer[34m: {"type":"ping","time":1654395414}
+19:16:54.218 [37m<- Streamer[32m: {"type":"pong","time":1654395414}
+19:17:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654395474}
+19:17:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654395474}
+19:18:54.223 [37m-> Streamer[34m: {"type":"ping","time":1654395534}
+19:18:54.224 [37m<- Streamer[32m: {"type":"pong","time":1654395534}
+19:19:54.205 [37m-> Streamer[34m: {"type":"ping","time":1654395594}
+19:19:54.206 [37m<- Streamer[32m: {"type":"pong","time":1654395594}
+19:20:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654395654}
+19:20:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654395654}
+19:21:54.222 [37m-> Streamer[34m: {"type":"ping","time":1654395714}
+19:21:54.223 [37m<- Streamer[32m: {"type":"pong","time":1654395714}
+19:22:54.235 [37m-> Streamer[34m: {"type":"ping","time":1654395774}
+19:22:54.236 [37m<- Streamer[32m: {"type":"pong","time":1654395774}
+19:23:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654395834}
+19:23:54.209 [37m<- Streamer[32m: {"type":"pong","time":1654395834}
+19:24:54.195 [37m-> Streamer[34m: {"type":"ping","time":1654395894}
+19:24:54.196 [37m<- Streamer[32m: {"type":"pong","time":1654395894}
+19:25:54.240 [37m-> Streamer[34m: {"type":"ping","time":1654395954}
+19:25:54.241 [37m<- Streamer[32m: {"type":"pong","time":1654395954}
+19:26:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654396014}
+19:26:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654396014}
+19:27:54.204 [37m-> Streamer[34m: {"type":"ping","time":1654396074}
+19:27:54.205 [37m<- Streamer[32m: {"type":"pong","time":1654396074}
+19:28:54.230 [37m-> Streamer[34m: {"type":"ping","time":1654396134}
+19:28:54.231 [37m<- Streamer[32m: {"type":"pong","time":1654396134}
+19:29:54.224 [37m-> Streamer[34m: {"type":"ping","time":1654396194}
+19:29:54.225 [37m<- Streamer[32m: {"type":"pong","time":1654396194}
+19:30:54.222 [37m-> Streamer[34m: {"type":"ping","time":1654396254}
+19:30:54.223 [37m<- Streamer[32m: {"type":"pong","time":1654396254}
+19:31:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654396314}
+19:31:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654396314}
+19:32:54.234 [37m-> Streamer[34m: {"type":"ping","time":1654396374}
+19:32:54.235 [37m<- Streamer[32m: {"type":"pong","time":1654396374}
+19:33:54.228 [37m-> Streamer[34m: {"type":"ping","time":1654396434}
+19:33:54.229 [37m<- Streamer[32m: {"type":"pong","time":1654396434}
+19:34:54.249 [37m-> Streamer[34m: {"type":"ping","time":1654396494}
+19:34:54.250 [37m<- Streamer[32m: {"type":"pong","time":1654396494}
+19:35:54.236 [37m-> Streamer[34m: {"type":"ping","time":1654396554}
+19:35:54.237 [37m<- Streamer[32m: {"type":"pong","time":1654396554}
+19:36:54.222 [37m-> Streamer[34m: {"type":"ping","time":1654396614}
+19:36:54.223 [37m<- Streamer[32m: {"type":"pong","time":1654396614}
+19:37:54.209 [37m-> Streamer[34m: {"type":"ping","time":1654396674}
+19:37:54.210 [37m<- Streamer[32m: {"type":"pong","time":1654396674}
+19:38:54.207 [37m-> Streamer[34m: {"type":"ping","time":1654396734}
+19:38:54.208 [37m<- Streamer[32m: {"type":"pong","time":1654396734}
+19:39:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654396794}
+19:39:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654396794}
+19:40:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654396854}
+19:40:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654396854}
+19:41:54.244 [37m-> Streamer[34m: {"type":"ping","time":1654396914}
+19:41:54.245 [37m<- Streamer[32m: {"type":"pong","time":1654396914}
+19:42:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654396974}
+19:42:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654396974}
+19:43:54.234 [37m-> Streamer[34m: {"type":"ping","time":1654397034}
+19:43:54.235 [37m<- Streamer[32m: {"type":"pong","time":1654397034}
+19:44:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654397094}
+19:44:54.223 [37m<- Streamer[32m: {"type":"pong","time":1654397094}
+19:45:54.233 [37m-> Streamer[34m: {"type":"ping","time":1654397154}
+19:45:54.234 [37m<- Streamer[32m: {"type":"pong","time":1654397154}
+19:46:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654397214}
+19:46:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654397214}
+19:47:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654397274}
+19:47:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654397274}
+19:48:54.219 [37m-> Streamer[34m: {"type":"ping","time":1654397334}
+19:48:54.220 [37m<- Streamer[32m: {"type":"pong","time":1654397334}
+19:49:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654397394}
+19:49:54.229 [37m<- Streamer[32m: {"type":"pong","time":1654397394}
+19:50:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654397454}
+19:50:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654397454}
+19:51:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654397514}
+19:51:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654397514}
+19:52:54.240 [37m-> Streamer[34m: {"type":"ping","time":1654397574}
+19:52:54.241 [37m<- Streamer[32m: {"type":"pong","time":1654397574}
+19:53:54.236 [37m-> Streamer[34m: {"type":"ping","time":1654397634}
+19:53:54.237 [37m<- Streamer[32m: {"type":"pong","time":1654397634}
+19:54:54.225 [37m-> Streamer[34m: {"type":"ping","time":1654397694}
+19:54:54.226 [37m<- Streamer[32m: {"type":"pong","time":1654397694}
+19:55:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654397754}
+19:55:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654397754}
+19:56:54.239 [37m-> Streamer[34m: {"type":"ping","time":1654397814}
+19:56:54.240 [37m<- Streamer[32m: {"type":"pong","time":1654397814}
+19:57:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654397874}
+19:57:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654397874}
+19:58:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654397934}
+19:58:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654397934}
+19:59:54.219 [37m-> Streamer[34m: {"type":"ping","time":1654397994}
+19:59:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654397994}
+20:00:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654398054}
+20:00:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654398054}
+20:01:54.198 [37m-> Streamer[34m: {"type":"ping","time":1654398114}
+20:01:54.199 [37m<- Streamer[32m: {"type":"pong","time":1654398114}
+20:02:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654398174}
+20:02:54.234 [37m<- Streamer[32m: {"type":"pong","time":1654398174}
+20:03:54.235 [37m-> Streamer[34m: {"type":"ping","time":1654398234}
+20:03:54.235 [37m<- Streamer[32m: {"type":"pong","time":1654398234}
+20:04:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654398294}
+20:04:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654398294}
+20:05:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654398354}
+20:05:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654398354}
+20:06:54.218 [37m-> Streamer[34m: {"type":"ping","time":1654398414}
+20:06:54.219 [37m<- Streamer[32m: {"type":"pong","time":1654398414}
+20:07:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654398474}
+20:07:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654398474}
+20:08:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654398534}
+20:08:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654398534}
+20:09:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654398594}
+20:09:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654398594}
+20:10:54.206 [37m-> Streamer[34m: {"type":"ping","time":1654398654}
+20:10:54.207 [37m<- Streamer[32m: {"type":"pong","time":1654398654}
+20:11:54.224 [37m-> Streamer[34m: {"type":"ping","time":1654398714}
+20:11:54.225 [37m<- Streamer[32m: {"type":"pong","time":1654398714}
+20:12:54.212 [37m-> Streamer[34m: {"type":"ping","time":1654398774}
+20:12:54.213 [37m<- Streamer[32m: {"type":"pong","time":1654398774}
+20:13:54.198 [37m-> Streamer[34m: {"type":"ping","time":1654398834}
+20:13:54.199 [37m<- Streamer[32m: {"type":"pong","time":1654398834}
+20:14:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654398894}
+20:14:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654398894}
+20:15:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654398954}
+20:15:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654398954}
+20:16:54.200 [37m-> Streamer[34m: {"type":"ping","time":1654399014}
+20:16:54.201 [37m<- Streamer[32m: {"type":"pong","time":1654399014}
+20:17:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654399074}
+20:17:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654399074}
+20:18:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654399134}
+20:18:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654399134}
+20:19:54.228 [37m-> Streamer[34m: {"type":"ping","time":1654399194}
+20:19:54.229 [37m<- Streamer[32m: {"type":"pong","time":1654399194}
+20:20:54.230 [37m-> Streamer[34m: {"type":"ping","time":1654399254}
+20:20:54.231 [37m<- Streamer[32m: {"type":"pong","time":1654399254}
+20:21:54.226 [37m-> Streamer[34m: {"type":"ping","time":1654399314}
+20:21:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654399314}
+20:22:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654399374}
+20:22:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654399374}
+20:23:54.231 [37m-> Streamer[34m: {"type":"ping","time":1654399434}
+20:23:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654399434}
+20:24:54.216 [37m-> Streamer[34m: {"type":"ping","time":1654399494}
+20:24:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654399494}
+20:25:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654399554}
+20:25:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654399554}
+20:26:54.206 [37m-> Streamer[34m: {"type":"ping","time":1654399614}
+20:26:54.207 [37m<- Streamer[32m: {"type":"pong","time":1654399614}
+20:27:54.241 [37m-> Streamer[34m: {"type":"ping","time":1654399674}
+20:27:54.242 [37m<- Streamer[32m: {"type":"pong","time":1654399674}
+20:28:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654399734}
+20:28:54.232 [37m<- Streamer[32m: {"type":"pong","time":1654399734}
+20:29:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654399794}
+20:29:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654399794}
+20:30:54.225 [37m-> Streamer[34m: {"type":"ping","time":1654399854}
+20:30:54.227 [37m<- Streamer[32m: {"type":"pong","time":1654399854}
+20:31:54.214 [37m-> Streamer[34m: {"type":"ping","time":1654399914}
+20:31:54.215 [37m<- Streamer[32m: {"type":"pong","time":1654399914}
+20:32:54.245 [37m-> Streamer[34m: {"type":"ping","time":1654399974}
+20:32:54.246 [37m<- Streamer[32m: {"type":"pong","time":1654399974}
+20:33:54.248 [37m-> Streamer[34m: {"type":"ping","time":1654400034}
+20:33:54.249 [37m<- Streamer[32m: {"type":"pong","time":1654400034}
+20:34:54.221 [37m-> Streamer[34m: {"type":"ping","time":1654400094}
+20:34:54.222 [37m<- Streamer[32m: {"type":"pong","time":1654400094}
+20:35:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654400154}
+20:35:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654400154}
+20:36:54.216 [37m-> Streamer[34m: {"type":"ping","time":1654400214}
+20:36:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654400214}
+20:37:54.210 [37m-> Streamer[34m: {"type":"ping","time":1654400274}
+20:37:54.211 [37m<- Streamer[32m: {"type":"pong","time":1654400274}
+20:38:54.218 [37m-> Streamer[34m: {"type":"ping","time":1654400334}
+20:38:54.219 [37m<- Streamer[32m: {"type":"pong","time":1654400334}
+20:39:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654400394}
+20:39:54.233 [37m<- Streamer[32m: {"type":"pong","time":1654400394}
+20:40:54.235 [37m-> Streamer[34m: {"type":"ping","time":1654400454}
+20:40:54.236 [37m<- Streamer[32m: {"type":"pong","time":1654400454}
+20:41:54.200 [37m-> Streamer[34m: {"type":"ping","time":1654400514}
+20:41:54.201 [37m<- Streamer[32m: {"type":"pong","time":1654400514}
+20:42:54.230 [37m-> Streamer[34m: {"type":"ping","time":1654400574}
+20:42:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654400574}
+20:43:54.216 [37m-> Streamer[34m: {"type":"ping","time":1654400634}
+20:43:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654400634}
+20:44:54.219 [37m-> Streamer[34m: {"type":"ping","time":1654400694}
+20:44:54.220 [37m<- Streamer[32m: {"type":"pong","time":1654400694}
+20:45:54.220 [37m-> Streamer[34m: {"type":"ping","time":1654400754}
+20:45:54.221 [37m<- Streamer[32m: {"type":"pong","time":1654400754}
+20:46:54.244 [37m-> Streamer[34m: {"type":"ping","time":1654400814}
+20:46:54.246 [37m<- Streamer[32m: {"type":"pong","time":1654400814}
+20:47:54.227 [37m-> Streamer[34m: {"type":"ping","time":1654400874}
+20:47:54.228 [37m<- Streamer[32m: {"type":"pong","time":1654400874}
+20:48:54.228 [37m-> Streamer[34m: {"type":"ping","time":1654400934}
+20:48:54.229 [37m<- Streamer[32m: {"type":"pong","time":1654400934}
+20:49:54.213 [37m-> Streamer[34m: {"type":"ping","time":1654400994}
+20:49:54.214 [37m<- Streamer[32m: {"type":"pong","time":1654400994}
+20:50:54.225 [37m-> Streamer[34m: {"type":"ping","time":1654401054}
+20:50:54.226 [37m<- Streamer[32m: {"type":"pong","time":1654401054}
+20:50:56.273 player 102 (::1) connected
+20:50:56.274 [37m<- Streamer[32m: {"type":"playerConnected","playerId":"102","dataChannel":true,"sfu":false}
+20:50:56.321 [37m-> Streamer[34m: {"type":"offer","playerId":102,"sdp":"v=0\r\no=- 1170599975478506534 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:TyZz\r\na=ice-pwd:stWloj1EaEEf7zveaanFR/8M\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F4:B4:EB:C5:E2:7A:61:14:B9:A5:CE:85:FE:22:35:E9:B3:62:B5:BE:D7:84:A7:96:01:7F:12:3A:FB:BC:C2:EC\r\na=setup:actpass\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\na=ssrc-group:FID 2283550200 636623681\r\na=ssrc:2283550200 cname:/Z8wHLFlFz1vYbz2\r\na=ssrc:2283550200 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:2283550200 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:2283550200 label:pixelstreaming_video_track_label\r\na=ssrc:636623681 cname:/Z8wHLFlFz1vYbz2\r\na=ssrc:636623681 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:636623681 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:636623681 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:TyZz\r\na=ice-pwd:stWloj1EaEEf7zveaanFR/8M\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F4:B4:EB:C5:E2:7A:61:14:B9:A5:CE:85:FE:22:35:E9:B3:62:B5:BE:D7:84:A7:96:01:7F:12:3A:FB:BC:C2:EC\r\na=setup:actpass\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:2779056423 cname:/Z8wHLFlFz1vYbz2\r\na=ssrc:2779056423 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:2779056423 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:2779056423 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:TyZz\r\na=ice-pwd:stWloj1EaEEf7zveaanFR/8M\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F4:B4:EB:C5:E2:7A:61:14:B9:A5:CE:85:FE:22:35:E9:B3:62:B5:BE:D7:84:A7:96:01:7F:12:3A:FB:BC:C2:EC\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+20:50:56.326 [37m<- player 102[32m: {"type":"offer","sdp":"v=0\r\no=- 1170599975478506534 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:TyZz\r\na=ice-pwd:stWloj1EaEEf7zveaanFR/8M\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F4:B4:EB:C5:E2:7A:61:14:B9:A5:CE:85:FE:22:35:E9:B3:62:B5:BE:D7:84:A7:96:01:7F:12:3A:FB:BC:C2:EC\r\na=setup:actpass\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\na=ssrc-group:FID 2283550200 636623681\r\na=ssrc:2283550200 cname:/Z8wHLFlFz1vYbz2\r\na=ssrc:2283550200 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:2283550200 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:2283550200 label:pixelstreaming_video_track_label\r\na=ssrc:636623681 cname:/Z8wHLFlFz1vYbz2\r\na=ssrc:636623681 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:636623681 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:636623681 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:TyZz\r\na=ice-pwd:stWloj1EaEEf7zveaanFR/8M\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F4:B4:EB:C5:E2:7A:61:14:B9:A5:CE:85:FE:22:35:E9:B3:62:B5:BE:D7:84:A7:96:01:7F:12:3A:FB:BC:C2:EC\r\na=setup:actpass\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:2779056423 cname:/Z8wHLFlFz1vYbz2\r\na=ssrc:2779056423 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:2779056423 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:2779056423 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:TyZz\r\na=ice-pwd:stWloj1EaEEf7zveaanFR/8M\r\na=ice-options:trickle\r\na=fingerprint:sha-256 F4:B4:EB:C5:E2:7A:61:14:B9:A5:CE:85:FE:22:35:E9:B3:62:B5:BE:D7:84:A7:96:01:7F:12:3A:FB:BC:C2:EC\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+20:50:56.354 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 54064 typ host generation 0 ufrag TyZz network-id 1"}}
+20:50:56.355 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 54064 typ host generation 0 ufrag TyZz network-id 1"}}
+20:50:56.388 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 54065 typ host generation 0 ufrag TyZz network-id 1"}}
+20:50:56.389 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 54065 typ host generation 0 ufrag TyZz network-id 1"}}
+20:50:56.422 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 54066 typ host generation 0 ufrag TyZz network-id 1"}}
+20:50:56.423 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 54066 typ host generation 0 ufrag TyZz network-id 1"}}
+20:50:56.456 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 54065 typ srflx raddr 192.168.163.150 rport 54065 generation 0 ufrag TyZz network-id 1"}}
+20:50:56.459 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 54065 typ srflx raddr 192.168.163.150 rport 54065 generation 0 ufrag TyZz network-id 1"}}
+20:50:56.490 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 54066 typ srflx raddr 192.168.163.150 rport 54066 generation 0 ufrag TyZz network-id 1"}}
+20:50:56.491 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 54066 typ srflx raddr 192.168.163.150 rport 54066 generation 0 ufrag TyZz network-id 1"}}
+20:50:56.523 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 54064 typ srflx raddr 192.168.163.150 rport 54064 generation 0 ufrag TyZz network-id 1"}}
+20:50:56.523 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 54064 typ srflx raddr 192.168.163.150 rport 54064 generation 0 ufrag TyZz network-id 1"}}
+20:50:56.557 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52157 typ host tcptype passive generation 0 ufrag TyZz network-id 1"}}
+20:50:56.558 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52157 typ host tcptype passive generation 0 ufrag TyZz network-id 1"}}
+20:50:56.591 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52158 typ host tcptype passive generation 0 ufrag TyZz network-id 1"}}
+20:50:56.592 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52158 typ host tcptype passive generation 0 ufrag TyZz network-id 1"}}
+20:50:56.624 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":102,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52159 typ host tcptype passive generation 0 ufrag TyZz network-id 1"}}
+20:50:56.625 [37m<- player 102[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52159 typ host tcptype passive generation 0 ufrag TyZz network-id 1"}}
+20:50:57.166 [37m-> player 102[34m: {"type":"answer","sdp":"v=0\r\no=- 5894570948956061149 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:nIdy\r\na=ice-pwd:Wpq+8jOKYXKJ8GQN8s+PUHnn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:98:9E:B4:76:A5:6D:01:0A:B0:4C:37:37:45:60:16:D6:76:C9:E8:3F:DC:84:38:00:5B:1C:FE:87:6C:E4:92\r\na=setup:active\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:nIdy\r\na=ice-pwd:Wpq+8jOKYXKJ8GQN8s+PUHnn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:98:9E:B4:76:A5:6D:01:0A:B0:4C:37:37:45:60:16:D6:76:C9:E8:3F:DC:84:38:00:5B:1C:FE:87:6C:E4:92\r\na=setup:active\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:nIdy\r\na=ice-pwd:Wpq+8jOKYXKJ8GQN8s+PUHnn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:98:9E:B4:76:A5:6D:01:0A:B0:4C:37:37:45:60:16:D6:76:C9:E8:3F:DC:84:38:00:5B:1C:FE:87:6C:E4:92\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+20:50:57.170 [37m<- Streamer[32m: {"type":"answer","sdp":"v=0\r\no=- 5894570948956061149 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:nIdy\r\na=ice-pwd:Wpq+8jOKYXKJ8GQN8s+PUHnn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:98:9E:B4:76:A5:6D:01:0A:B0:4C:37:37:45:60:16:D6:76:C9:E8:3F:DC:84:38:00:5B:1C:FE:87:6C:E4:92\r\na=setup:active\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:nIdy\r\na=ice-pwd:Wpq+8jOKYXKJ8GQN8s+PUHnn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:98:9E:B4:76:A5:6D:01:0A:B0:4C:37:37:45:60:16:D6:76:C9:E8:3F:DC:84:38:00:5B:1C:FE:87:6C:E4:92\r\na=setup:active\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:nIdy\r\na=ice-pwd:Wpq+8jOKYXKJ8GQN8s+PUHnn\r\na=ice-options:trickle\r\na=fingerprint:sha-256 36:98:9E:B4:76:A5:6D:01:0A:B0:4C:37:37:45:60:16:D6:76:C9:E8:3F:DC:84:38:00:5B:1C:FE:87:6C:E4:92\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n","playerId":"102"}
+20:50:57.240 [37m-> player 102[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2471986196 1 udp 2113937151 39733ea4-a571-4b4c-ba68-097bc572ae2e.local 63175 typ host generation 0 ufrag nIdy network-cost 999","sdpMid":"0","sdpMLineIndex":0}}
+20:50:57.241 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2471986196 1 udp 2113937151 39733ea4-a571-4b4c-ba68-097bc572ae2e.local 63175 typ host generation 0 ufrag nIdy network-cost 999","sdpMid":"0","sdpMLineIndex":0},"playerId":"102"}
+20:51:54.235 [37m-> Streamer[34m: {"type":"ping","time":1654401114}
+20:51:54.236 [37m<- Streamer[32m: {"type":"pong","time":1654401114}
+20:51:57.168 player 102 connection closed: 1006 - 
+20:51:57.169 [37m<- Streamer[32m: {"type":"playerDisconnected","playerId":"102"}
+20:52:54.232 [37m-> Streamer[34m: {"type":"ping","time":1654401174}
+20:52:54.233 [37m<- Streamer[32m: {"type":"pong","time":1654401174}
+20:53:54.222 [37m-> Streamer[34m: {"type":"ping","time":1654401234}
+20:53:54.223 [37m<- Streamer[32m: {"type":"pong","time":1654401234}
+20:54:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654401294}
+20:54:54.216 [37m<- Streamer[32m: {"type":"pong","time":1654401294}
+20:55:54.211 [37m-> Streamer[34m: {"type":"ping","time":1654401354}
+20:55:54.212 [37m<- Streamer[32m: {"type":"pong","time":1654401354}
+20:56:09.605 player 103 (::1) connected
+20:56:09.606 [37m<- Streamer[32m: {"type":"playerConnected","playerId":"103","dataChannel":true,"sfu":false}
+20:56:09.668 [37m-> Streamer[34m: {"type":"offer","playerId":103,"sdp":"v=0\r\no=- 6728590144051472977 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:KPd3\r\na=ice-pwd:XfHTbu37KMeNOCuygNrEvvHm\r\na=ice-options:trickle\r\na=fingerprint:sha-256 2B:46:89:ED:9C:3E:59:09:AA:A0:ED:9E:6D:4B:E7:73:19:3F:A9:10:55:5D:80:A4:97:FB:52:D6:F8:6E:07:EB\r\na=setup:actpass\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\na=ssrc-group:FID 298398992 294412223\r\na=ssrc:298398992 cname:doXLVs9cULGIEm0O\r\na=ssrc:298398992 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:298398992 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:298398992 label:pixelstreaming_video_track_label\r\na=ssrc:294412223 cname:doXLVs9cULGIEm0O\r\na=ssrc:294412223 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:294412223 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:294412223 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:KPd3\r\na=ice-pwd:XfHTbu37KMeNOCuygNrEvvHm\r\na=ice-options:trickle\r\na=fingerprint:sha-256 2B:46:89:ED:9C:3E:59:09:AA:A0:ED:9E:6D:4B:E7:73:19:3F:A9:10:55:5D:80:A4:97:FB:52:D6:F8:6E:07:EB\r\na=setup:actpass\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:1622588269 cname:doXLVs9cULGIEm0O\r\na=ssrc:1622588269 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:1622588269 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:1622588269 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:KPd3\r\na=ice-pwd:XfHTbu37KMeNOCuygNrEvvHm\r\na=ice-options:trickle\r\na=fingerprint:sha-256 2B:46:89:ED:9C:3E:59:09:AA:A0:ED:9E:6D:4B:E7:73:19:3F:A9:10:55:5D:80:A4:97:FB:52:D6:F8:6E:07:EB\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+20:56:09.673 [37m<- player 103[32m: {"type":"offer","sdp":"v=0\r\no=- 6728590144051472977 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS pixelstreaming_audio_stream_id pixelstreaming_video_stream_id\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:KPd3\r\na=ice-pwd:XfHTbu37KMeNOCuygNrEvvHm\r\na=ice-options:trickle\r\na=fingerprint:sha-256 2B:46:89:ED:9C:3E:59:09:AA:A0:ED:9E:6D:4B:E7:73:19:3F:A9:10:55:5D:80:A4:97:FB:52:D6:F8:6E:07:EB\r\na=setup:actpass\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://tools.ietf.org/html/draft-ietf-avtext-framemarking-07\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendonly\r\na=msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\na=ssrc-group:FID 298398992 294412223\r\na=ssrc:298398992 cname:doXLVs9cULGIEm0O\r\na=ssrc:298398992 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:298398992 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:298398992 label:pixelstreaming_video_track_label\r\na=ssrc:294412223 cname:doXLVs9cULGIEm0O\r\na=ssrc:294412223 msid:pixelstreaming_video_stream_id pixelstreaming_video_track_label\r\na=ssrc:294412223 mslabel:pixelstreaming_video_stream_id\r\na=ssrc:294412223 label:pixelstreaming_video_track_label\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:KPd3\r\na=ice-pwd:XfHTbu37KMeNOCuygNrEvvHm\r\na=ice-options:trickle\r\na=fingerprint:sha-256 2B:46:89:ED:9C:3E:59:09:AA:A0:ED:9E:6D:4B:E7:73:19:3F:A9:10:55:5D:80:A4:97:FB:52:D6:F8:6E:07:EB\r\na=setup:actpass\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\na=ssrc:1622588269 cname:doXLVs9cULGIEm0O\r\na=ssrc:1622588269 msid:pixelstreaming_audio_stream_id pixelstreaming_audio_track_label\r\na=ssrc:1622588269 mslabel:pixelstreaming_audio_stream_id\r\na=ssrc:1622588269 label:pixelstreaming_audio_track_label\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:KPd3\r\na=ice-pwd:XfHTbu37KMeNOCuygNrEvvHm\r\na=ice-options:trickle\r\na=fingerprint:sha-256 2B:46:89:ED:9C:3E:59:09:AA:A0:ED:9E:6D:4B:E7:73:19:3F:A9:10:55:5D:80:A4:97:FB:52:D6:F8:6E:07:EB\r\na=setup:actpass\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+20:56:09.702 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 64086 typ host generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.702 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 64086 typ host generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.736 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 64087 typ host generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.737 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 64087 typ host generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.770 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 64088 typ host generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.770 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:2852106574 1 udp 2122260223 192.168.163.150 64088 typ host generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.804 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 64087 typ srflx raddr 192.168.163.150 rport 64087 generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.805 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 64087 typ srflx raddr 192.168.163.150 rport 64087 generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.837 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 64088 typ srflx raddr 192.168.163.150 rport 64088 generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.838 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 64088 typ srflx raddr 192.168.163.150 rport 64088 generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.871 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 64086 typ srflx raddr 192.168.163.150 rport 64086 generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.872 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3224764047 1 udp 1686052607 174.73.238.87 64086 typ srflx raddr 192.168.163.150 rport 64086 generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.905 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52204 typ host tcptype passive generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.906 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"0","sdpMLineIndex":0,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52204 typ host tcptype passive generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.934 [37m-> player 103[34m: {"type":"answer","sdp":"v=0\r\no=- 3530225606425548236 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:sKFQ\r\na=ice-pwd:CC2NlY6RbIIr8yP8qQByvhki\r\na=ice-options:trickle\r\na=fingerprint:sha-256 12:EE:6A:28:D7:71:41:0A:8D:79:CB:C6:FD:49:E7:68:7A:1E:44:3B:3E:27:9D:E1:1D:12:90:CF:AD:DE:22:55\r\na=setup:active\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:sKFQ\r\na=ice-pwd:CC2NlY6RbIIr8yP8qQByvhki\r\na=ice-options:trickle\r\na=fingerprint:sha-256 12:EE:6A:28:D7:71:41:0A:8D:79:CB:C6:FD:49:E7:68:7A:1E:44:3B:3E:27:9D:E1:1D:12:90:CF:AD:DE:22:55\r\na=setup:active\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:sKFQ\r\na=ice-pwd:CC2NlY6RbIIr8yP8qQByvhki\r\na=ice-options:trickle\r\na=fingerprint:sha-256 12:EE:6A:28:D7:71:41:0A:8D:79:CB:C6:FD:49:E7:68:7A:1E:44:3B:3E:27:9D:E1:1D:12:90:CF:AD:DE:22:55\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n"}
+20:56:09.937 [37m<- Streamer[32m: {"type":"answer","sdp":"v=0\r\no=- 3530225606425548236 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1 2\r\na=msid-semantic: WMS\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:sKFQ\r\na=ice-pwd:CC2NlY6RbIIr8yP8qQByvhki\r\na=ice-options:trickle\r\na=fingerprint:sha-256 12:EE:6A:28:D7:71:41:0A:8D:79:CB:C6:FD:49:E7:68:7A:1E:44:3B:3E:27:9D:E1:1D:12:90:CF:AD:DE:22:55\r\na=setup:active\r\na=mid:0\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:9 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=recvonly\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 H264/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=fmtp:96 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:98 red/90000\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 ulpfec/90000\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 110\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:sKFQ\r\na=ice-pwd:CC2NlY6RbIIr8yP8qQByvhki\r\na=ice-options:trickle\r\na=fingerprint:sha-256 12:EE:6A:28:D7:71:41:0A:8D:79:CB:C6:FD:49:E7:68:7A:1E:44:3B:3E:27:9D:E1:1D:12:90:CF:AD:DE:22:55\r\na=setup:active\r\na=mid:1\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=recvonly\r\na=rtcp-mux\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:110 telephone-event/48000\r\nm=application 9 UDP/DTLS/SCTP webrtc-datachannel\r\nc=IN IP4 0.0.0.0\r\na=ice-ufrag:sKFQ\r\na=ice-pwd:CC2NlY6RbIIr8yP8qQByvhki\r\na=ice-options:trickle\r\na=fingerprint:sha-256 12:EE:6A:28:D7:71:41:0A:8D:79:CB:C6:FD:49:E7:68:7A:1E:44:3B:3E:27:9D:E1:1D:12:90:CF:AD:DE:22:55\r\na=setup:active\r\na=mid:2\r\na=sctp-port:5000\r\na=max-message-size:262144\r\n","playerId":"103"}
+20:56:09.939 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52205 typ host tcptype passive generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.939 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"1","sdpMLineIndex":1,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52205 typ host tcptype passive generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.973 [37m-> Streamer[34m: {"type":"iceCandidate","playerId":103,"candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52206 typ host tcptype passive generation 0 ufrag KPd3 network-id 1"}}
+20:56:09.973 [37m<- player 103[32m: {"type":"iceCandidate","candidate":{"sdpMid":"2","sdpMLineIndex":2,"candidate":"candidate:3883683262 1 tcp 1518280447 192.168.163.150 52206 typ host tcptype passive generation 0 ufrag KPd3 network-id 1"}}
+20:56:10.051 [37m-> player 103[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2475390156 1 udp 2122260223 172.27.208.1 49963 typ host generation 0 ufrag sKFQ network-id 1","sdpMid":"0","sdpMLineIndex":0}}
+20:56:10.052 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2475390156 1 udp 2122260223 172.27.208.1 49963 typ host generation 0 ufrag sKFQ network-id 1","sdpMid":"0","sdpMLineIndex":0},"playerId":"103"}
+20:56:10.052 [37m-> player 103[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2471986196 1 udp 2122194687 192.168.163.169 49964 typ host generation 0 ufrag sKFQ network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+20:56:10.053 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:2471986196 1 udp 2122194687 192.168.163.169 49964 typ host generation 0 ufrag sKFQ network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"103"}
+20:56:10.055 [37m-> player 103[34m: {"type":"iceCandidate","candidate":{"candidate":"candidate:4204645333 1 udp 1685987071 174.73.238.87 49964 typ srflx raddr 192.168.163.169 rport 49964 generation 0 ufrag sKFQ network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0}}
+20:56:10.055 [37m<- Streamer[32m: {"type":"iceCandidate","candidate":{"candidate":"candidate:4204645333 1 udp 1685987071 174.73.238.87 49964 typ srflx raddr 192.168.163.169 rport 49964 generation 0 ufrag sKFQ network-id 2 network-cost 10","sdpMid":"0","sdpMLineIndex":0},"playerId":"103"}
+20:56:54.229 [37m-> Streamer[34m: {"type":"ping","time":1654401414}
+20:56:54.230 [37m<- Streamer[32m: {"type":"pong","time":1654401414}
+20:57:09.909 player 103 connection closed: 1006 - 
+20:57:09.909 [37m<- Streamer[32m: {"type":"playerDisconnected","playerId":"103"}
+20:57:54.219 [37m-> Streamer[34m: {"type":"ping","time":1654401474}
+20:57:54.220 [37m<- Streamer[32m: {"type":"pong","time":1654401474}
+20:58:54.215 [37m-> Streamer[34m: {"type":"ping","time":1654401534}
+20:58:54.217 [37m<- Streamer[32m: {"type":"pong","time":1654401534}
+20:59:33.128 killing all players

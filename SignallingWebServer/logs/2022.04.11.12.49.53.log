@@ -1,0 +1,26 @@
+12:49:53.376 Config: {
+	"UseFrontend": false,
+	"UseMatchmaker": false,
+	"UseHTTPS": false,
+	"UseAuthentication": false,
+	"LogToFile": true,
+	"LogVerbose": true,
+	"HomepageFile": "/Public/player.html",
+	"AdditionalRoutes": {},
+	"EnableWebserver": true,
+	"MatchmakerAddress": "",
+	"MatchmakerPort": "9999",
+	"PublicIp": "localhost",
+	"HttpPort": 80,
+	"HttpsPort": 443,
+	"StreamerPort": 8080,
+	"SFUPort": 8081,
+	"peerConnectionOptions": "{ \"iceServers\": [{\"urls\": [\"stun:stun.l.google.com:19302\"]}] }",
+	"publicIp": "174.73.238.87"
+}
+12:49:53.399 peerConnectionOptions = {"iceServers":[{"urls":["stun:stun.l.google.com:19302"]}]}
+12:49:53.403 Running Cirrus - The Pixel Streaming reference implementation signalling server for Unreal Engine 5.0.
+12:49:53.411 WebSocket listening for Streamer connections on :8080
+12:49:53.412 WebSocket listening for SFU connections on :8081
+12:49:53.413 WebSocket listening for Players connections on :80
+12:49:53.414 Http listening on *: 80
