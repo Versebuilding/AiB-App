@@ -47,7 +47,9 @@ All code needed to run a server for pixel streaming can be found in the `./Signa
 	```
 	- Verify that localtunnel is installed and can run by running `lt` in the command prompt.
 	<img src="./Documentation/Images/LocalTunnelInstallAndHelp.png" />
+	
 	- Start a local tunnel using the following command. The subdomain is not important but will let you chose the url a little:
+	
 	```
 	lt --port 8079 --subdomain versebuilding-AiB
 	```
